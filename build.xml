@@ -487,7 +487,7 @@
           <dependency groupId="io.netty" artifactId="netty-all" version="4.0.56.Final" />
           <dependency groupId="com.google.code.findbugs" artifactId="jsr305" version="2.0.2" />
           <dependency groupId="com.clearspring.analytics" artifactId="stream" version="2.5.2" />
-          <dependency groupId="com.scylladb" artifactId="scylla-driver-core" version="3.7.1-scylla-2" classifier="shaded" />
+          <dependency groupId="com.scylladb" artifactId="java-driver-core" version="4.9.0-scylla-0" classifier="shaded" />
           <dependency groupId="org.eclipse.jdt.core.compiler" artifactId="ecj" version="4.4.2" />
 	  <!-- UPDATE AND UNCOMMENT ON THE DRIVER RELEASE, BEFORE 4.0 RELEASE
           <dependency groupId="com.datastax.cassandra" artifactId="cassandra-driver-core" version="3.4.0-SNAPSHOT" classifier="shaded">
@@ -577,7 +577,7 @@
         <dependency groupId="org.apache.hadoop" artifactId="hadoop-minicluster"/>
         <dependency groupId="com.google.code.findbugs" artifactId="jsr305"/>
         <dependency groupId="org.antlr" artifactId="antlr"/>
-        <dependency groupId="com.scylladb" artifactId="scylla-driver-core" classifier="shaded">
+        <dependency groupId="com.scylladb" artifactId="java-driver-core" classifier="shaded">
           <exclusion groupId="io.netty" artifactId="netty-buffer"/>
           <exclusion groupId="io.netty" artifactId="netty-codec"/>
           <exclusion groupId="io.netty" artifactId="netty-handler"/>
@@ -599,7 +599,7 @@
                 artifactId="cassandra-parent"
                 version="${version}"/>
         <dependency groupId="junit" artifactId="junit"/>
-        <dependency groupId="com.scylladb" artifactId="scylla-driver-core" classifier="shaded">
+        <dependency groupId="com.scylladb" artifactId="java-driver-core" classifier="shaded">
           <exclusion groupId="io.netty" artifactId="netty-buffer"/>
           <exclusion groupId="io.netty" artifactId="netty-codec"/>
           <exclusion groupId="io.netty" artifactId="netty-handler"/>
@@ -683,7 +683,7 @@
         <dependency groupId="org.apache.hadoop" artifactId="hadoop-minicluster" optional="true"/>
 
         <!-- don't need the Java Driver to run, but if you use the hadoop stuff or UDFs -->
-        <dependency groupId="com.scylladb" artifactId="scylla-driver-core" classifier="shaded" optional="true">
+        <dependency groupId="com.scylladb" artifactId="java-driver-core" classifier="shaded" optional="true">
           <exclusion groupId="io.netty" artifactId="netty-buffer"/>
           <exclusion groupId="io.netty" artifactId="netty-codec"/>
           <exclusion groupId="io.netty" artifactId="netty-handler"/>
